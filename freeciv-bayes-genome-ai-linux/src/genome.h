@@ -16,6 +16,6 @@ double genome_fitness(GenomePtr gp);
 
 void bitgenome2genome(BitGenomePtr bgp, GenomePtr gp);
 
-// mix with bitgenome void or_genome(GenomePtr gp 
+// FIXME mix with bitgenome void or_genome(GenomePtr gp 
 
 #endif

@@ -7,6 +7,7 @@ OBJS= list.o \
 	bayes.o \
 	bitgenome.o \
 	genome.o \
+	genome_algorithms.o \
 
 all: $(OBJS)
 	$(CC) -shared -o fc-ai.so $(OBJS)
