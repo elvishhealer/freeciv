@@ -29,7 +29,7 @@ void bitgenome2genome(BitGenomePtr bgp, GenomePtr gp)
 
 	while (count-- >= 0) { 
 		bs >>= 2;
-		if (bs ^ 1)
+		if (~bs & 1)
 			add_to_genome(1.0, gp);
 		else
 			add_to_genome(0.0, gp);
