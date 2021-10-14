@@ -1,10 +1,13 @@
 #ifndef _FC_GAUSS_PROB_H_
 #define _FC_GAUSS_PROB_H_
 
+#include "probability.h"
+
 // Gauss curve probability
 
 #define PI 3.14152
 
-double gauss_probability(double x, double mu, double sigma);
+Probability gauss_function(Probability x, Probability mu, Probability sigma);
+Probability gauss_probability(Probability x, Probability mu, Probability sigma);
 
 #endif
