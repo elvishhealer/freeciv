@@ -8,6 +8,11 @@ void make_bitgenome(BitGenomePtr gp)
 	gp->string = 0;
 }
 
+void free_bitgenome(BitGenomePtr gp)
+{
+	free(gp);
+}
+
 double bitgenome_fitness(BitGenomePtr gp)
 {
 	return (double)gp->string / sizeof(BitString);

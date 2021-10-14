@@ -9,9 +9,22 @@ void make_population(PopulationPtr pp)
 	pp->count = 0;
 } 
 
+void free_population(PopulationPtr pp)
+{
+	free_list(pp->pop);
+	free(pp);	
+}
+
 void add_to_population(Data d, PopulationPtr pp)
 {
 	add_to_list(d, pp->pop);
+	
+	pp->count ++;
+}
+
+void add_to_population_back(Data d, PopulationPtr pp)
+{
+	add_to_list_back(d, pp->pop);
 	
 	pp->count ++;
 }

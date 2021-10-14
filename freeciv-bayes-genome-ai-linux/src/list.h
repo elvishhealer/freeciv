@@ -14,6 +14,8 @@ typedef struct list {
 typedef List *ListPtr;
 
 void make_list(ListPtr lp);
+void free_list(ListPtr lp);
+
 void add_to_list(Data d, ListPtr lp);
 void add_to_list_back(Data d, ListPtr lp);
 

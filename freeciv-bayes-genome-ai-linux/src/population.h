@@ -12,7 +12,10 @@ typedef struct population { ListPtr pop; int count;
 typedef Population *PopulationPtr;
 
 void make_population(PopulationPtr pp);
+void free_population(PopulationPtr pp);
+
 void add_to_population(Data d, PopulationPtr pp);
+void add_to_population_back(Data d, PopulationPtr pp);
 
 // statistical methods 
 

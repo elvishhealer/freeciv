@@ -10,6 +10,8 @@ typedef struct bitgenome {
 typedef BitGenome *BitGenomePtr;
 
 void make_bitgenome(BitGenomePtr gp);
+void free_bitgenome(BitGenomePtr gp);
+
 double bitgenome_fitness(BitGenomePtr gp);
 
 void or_bitgenome(BitString bs, BitGenomePtr gp);

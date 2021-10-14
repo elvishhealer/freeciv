@@ -7,6 +7,8 @@ typedef Population Genome;
 typedef PopulationPtr GenomePtr;
 
 void make_genome(GenomePtr gp);
+void free_genome(GenomePtr gp);
+
 void add_to_genome(Data d, GenomePtr gp);
 
 double genome_fitness(GenomePtr gp);

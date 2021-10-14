@@ -8,11 +8,11 @@ OBJS= list.o \
 	genome.o \
 
 all: $(OBJS)
-	### $(CC) -shared fc-bayes-ai-.so $(OBJS)
-	$(CC) -shared $(OBJS)
+	$(CC) -shared -o fc-ai.so $(OBJS)
+	@cp fc-ai.so fc-ai.so.1
 	
 clean:
-	rm -f *.o
+	rm -f *.o fc-ai.so fc-ai.so.1
 
 .c.o:
 	$(CC) -c $<

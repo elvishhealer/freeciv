@@ -9,6 +9,11 @@ void make_list(ListPtr lp)
 	lp->next = NULL;
 }
 
+void free_list(ListPtr lp)
+{
+	free(lp);
+}
+
 void add_to_list(Data d, ListPtr lp)
 {
 	ListPtr lp2 = lp->next;
