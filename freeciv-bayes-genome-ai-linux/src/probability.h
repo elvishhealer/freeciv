@@ -12,4 +12,6 @@ Probability conditional_probability(Probability d);
 Probability pand(Probability p, Probability pbconda); 
 Probability porp(Probability p, Probability p2, Probability pbconda); 
 
+//FIXME Probability likelihood();
+
 #endif
