@@ -18,6 +18,11 @@ double bitgenome_fitness(BitGenomePtr gp)
 	return (double)gp->string / sizeof(BitString);
 }
 
+int bitgenome_count(BitGenomePtr gp)
+{
+	return sizeof(gp->string);
+}
+
 void or_bitgenome(BitString bs, BitGenomePtr gp)
 {
 	gp->string |= bs;

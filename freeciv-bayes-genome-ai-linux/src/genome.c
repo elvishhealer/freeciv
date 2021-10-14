@@ -22,4 +22,16 @@ double genome_fitness(GenomePtr gp)
 	return population_sum((PopulationPtr)gp);
 }
 
+void bitgenome2genome(BitGenomePtr bgp, GenomePtr gp)
+{
+	int count = bitgenome_count(bgp);
+	BitString bs = bgp->string;
 
+	while (count-- >= 0) { 
+		bs >>= 2;
+		if (bs ^ 1)
+			add_to_genome(1.0, gp);
+		else
+			add_to_genome(0.0, gp);
+	}	
+}

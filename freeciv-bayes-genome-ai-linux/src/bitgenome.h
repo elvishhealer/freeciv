@@ -14,6 +14,8 @@ void free_bitgenome(BitGenomePtr gp);
 
 double bitgenome_fitness(BitGenomePtr gp);
 
+int bitgenome_count(BitGenomePtr gp); // size
+
 void or_bitgenome(BitString bs, BitGenomePtr gp);
 
 #endif
