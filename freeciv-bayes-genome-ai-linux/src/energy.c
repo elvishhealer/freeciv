@@ -1,6 +1,7 @@
 #include "energy.h"
 
 #include <stdlib.h>
+#include <math.h>
 
 double norm(EnergyVector v)
 {
@@ -14,6 +15,6 @@ double cos_alpha(EnergyVector v)
 
 double angular_momentum_energy(EnergyVector v, double mass)
 {
-	return (1/2 * mass * (v.x+v.y+v.z)) + mass * 9.81 * (v.x+v.y+v.z); 
+	return (1/2 * mass * pow(v.x+v.y+v.z, 2)) + mass * 9.81 * (v.x+v.y+v.z); 
 }
 
