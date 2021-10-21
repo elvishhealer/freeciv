@@ -4,6 +4,7 @@ OBJS= list.o \
 	population.o \
 	gauss_probability.o \
 	probability.o \
+	energy.o \
 	bayes.o \
 	bitgenome.o \
 	genome.o \
