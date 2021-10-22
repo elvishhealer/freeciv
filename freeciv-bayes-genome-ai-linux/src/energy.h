@@ -8,8 +8,8 @@ typedef struct {
 } EnergyVector;
 
 double norm(EnergyVector v);
-double cos_alpha(EnergyVector v);
+double probability_cos_alpha(EnergyVector v);
 
-double angular_momentum_energy(EnergyVector v, double mass);
+double probability_angular_momentum_energy(EnergyVector v, double mass);
 
 #endif
